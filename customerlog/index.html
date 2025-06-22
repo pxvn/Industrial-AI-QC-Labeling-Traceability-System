@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hand Sign Log Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🖐️ Hand Sign Log Viewer</h1>
+    <input type="number" id="serialInput" placeholder="Enter Serial No" />
+    <button onclick="fetchData()">Search</button>
+
+    <div id="result" class="card hidden">
+      <h2>Entry Details</h2>
+      <p><strong>Serial:</strong> <span id="serial"></span></p>
+      <p><strong>Date:</strong> <span id="date"></span></p>
+      <p><strong>Time:</strong> <span id="time"></span></p>
+      <p><strong>Day:</strong> <span id="day"></span></p>
+      <p><strong>User:</strong> <span id="user"></span></p>
+    </div>
+    <p id="errorMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
