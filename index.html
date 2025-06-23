@@ -3,40 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Developer Hand Log Portal</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <title>Hand Sign Logger</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" id="loginContainer">
-    <h2>Developer Portal Login</h2>
-    <input type="text" id="empId" placeholder="Employee ID" />
-    <input type="password" id="empPass" placeholder="Password" />
-    <button onclick="login()">Login</button>
-    <p id="error"></p>
+  <div class="container">
+    <h1>Welcome to Hand Sign Logger</h1>
+    <div class="card-container">
+      <button onclick="location.href='login.html'">Employee Login</button>
+      <button onclick="location.href='verify.html'">Product Verification</button>
+    </div>
   </div>
-
-  <div class="container hidden" id="dashboard">
-    <button class="logout" onclick="logout()">Logout</button>
-    <h2>📊 Hand Sign Logs</h2>
-    <input type="text" id="searchBox" placeholder="Search logs..." onkeyup="filterTable()" />
-    <button onclick="exportTableToCSV()">Export CSV</button>
-    <table id="logTable">
-      <thead>
-        <tr>
-          <th onclick="sortTable(0)">Serial</th>
-          <th onclick="sortTable(1)">Date</th>
-          <th onclick="sortTable(2)">Time</th>
-          <th onclick="sortTable(3)">Day</th>
-          <th onclick="sortTable(4)">User</th>
-          <th onclick="sortTable(5)">System No</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <script src="app.js"></script>
 </body>
 </html>
