@@ -129,3 +129,30 @@ pre {
   margin: 10px 0;
   font-size: 16px;
 }
+/* styles.css or inside a <style> tag in HTML */
+
+.container {
+  width: 100%;         /* Responsive width */
+  padding: 2rem;       /* Scales with screen */
+  display: flex;       /* Flexbox for layout */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query Example */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+}
+
