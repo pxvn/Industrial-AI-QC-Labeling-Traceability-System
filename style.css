@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-body {
+/* GLOBAL RESET + BASE */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #061965, #fefae0);
   display: flex;
@@ -11,26 +16,33 @@ body {
   height: 100vh;
   animation: fadeIn 1s ease-in;
   color: #061965;
+  padding: 1rem;
 }
 
+/* CONTAINER */
 .container {
   background-color: rgba(255, 255, 255, 0.25);
-  padding: 40px;
+  padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   text-align: center;
   animation: slideIn 1s ease-in-out;
   backdrop-filter: blur(12px);
-  width: 90%;
+  width: 100%;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
+/* TEXT */
 h1, h2 {
-  margin-bottom: 20px;
   color: #061965;
+  margin-bottom: 20px;
 }
 
-.card-container button, button {
+/* BUTTONS */
+button, .card-container button {
   background-color: #fefae0;
   color: #061965;
   border: none;
@@ -43,16 +55,18 @@ h1, h2 {
   font-weight: bold;
 }
 
-.card-container button:hover, button:hover {
+button:hover, .card-container button:hover {
   background-color: #061965;
   color: #fefae0;
   transform: scale(1.05);
 }
 
+/* INPUTS */
 input[type="text"], input[type="password"] {
   padding: 12px;
   margin: 10px 0 20px;
-  width: 70%;
+  width: 100%;
+  max-width: 400px;
   border-radius: 8px;
   border: none;
   font-size: 16px;
@@ -61,6 +75,7 @@ input[type="text"], input[type="password"] {
   background-color: #fff;
 }
 
+/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -91,6 +106,7 @@ tr:nth-child(even) {
   background-color: #fefae0;
 }
 
+/* CODE BLOCK */
 pre {
   background-color: #ffffff;
   color: #061965;
@@ -98,8 +114,38 @@ pre {
   border-radius: 12px;
   text-align: left;
   margin-top: 30px;
+  overflow-x: auto;
 }
 
+/* RESULT BOX */
+.result-box {
+  margin-top: 30px;
+  background-color: #fefae0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+  color: #061965;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+}
+
+.result-box p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* RESPONSIVE IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ANIMATIONS */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -110,49 +156,57 @@ pre {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-.result-box {
-  margin-top: 30px;
-  background-color: #fefae0;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  text-align: left;
-  animation: fadeIn 0.5s ease-in-out;
-  color: #061965;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  transition: all 0.3s ease;
-}
-
-.result-box p {
-  margin: 10px 0;
-  font-size: 16px;
-}
-/* styles.css or inside a <style> tag in HTML */
-
-.container {
-  width: 100%;         /* Responsive width */
-  padding: 2rem;       /* Scales with screen */
-  display: flex;       /* Flexbox for layout */
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Media Query Example */
-@media (max-width: 768px) {
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
   .container {
-    flex-direction: column;
-    padding: 1rem;
+    padding: 30px 20px;
+    gap: 0.8rem;
   }
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+  button {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
 
-  .hero-text {
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+  .container {
+    width: 100%;
+    padding: 25px 15px;
+  }
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+  input[type="text"], input[type="password"] {
+    width: 90%;
+  }
+  button {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
     font-size: 1.2rem;
   }
+  .container {
+    padding: 20px 10px;
+  }
+  button {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+  pre, .result-box {
+    font-size: 14px;
+    padding: 15px;
+  }
 }
-
