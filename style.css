@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --primary-color: #061965;
+  --secondary-color: #fefae0;
+  --text-color: #061965;
+  --table-even-bg: #fefae0;
+  --table-header-hover: #030f47;
+}
+
+body {
+  margin: 0;
+  padding: 2vh 2vw;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in;
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: slideIn 1s ease-in-out;
+  backdrop-filter: blur(12px);
+  width: 95%;
+  max-width: 1200px;
+  min-width: 280px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-container button,
+button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
+  margin: 8px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  min-width: 120px;
+  width: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+button:hover,
+.card-container button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* Top-right fixed login button */
+button.fixed-login {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #0f1f9b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  z-index: 9999;
+}
+
+button.fixed-login:hover {
+  background-color: rgb(46, 28, 249);
+  color: #06126a;
+  border: 1px solid #000000;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.75rem;
+  margin: 10px 0 20px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: none;
+  font-size: clamp(14px, 2vw, 16px);
+  text-align: center;
+  color: var(--text-color);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--text-color);
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  box-sizing: border-box;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+th:hover {
+  background-color: var(--table-header-hover);
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-even-bg);
+}
+
+pre {
+  background-color: #ffffff;
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: 2rem;
+  overflow-x: auto;
+  font-size: clamp(12px, 1.8vw, 14px);
+  box-sizing: border-box;
+}
+
+.result-box {
+  margin-top: 2rem;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+  color: var(--text-color);
+  width: 95%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.result-box p {
+  margin: 0.75rem 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* === RESPONSIVE TWEAKS === */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  table, th, td {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    flex-direction: column;
+    padding: 2vh 5vw;
+  }
+
+  .container {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .result-box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
