@@ -1,124 +1,153 @@
 # AI enabled Industrial QC-LABELING-TRACEBILITY Automation System 
 ### Team Teenage engineering
 
+# Industrial AI QC Labeling and Traceability System
 
-PCB Quality Control & Traceability Automation System
-End-to-end automated solution for PCB labeling, quality inspection, and product traceability using AI-powered computer vision and real-time data logging.
+> **Smart PCB Quality Control & Traceability Automation System**  
+> End-to-end automated solution for PCB labeling, quality inspection, and product traceability using AI-powered computer vision and real-time data logging.
 
+## 🎯 Project Overview
 
-Project Overview
 This project implements a complete industrial automation system for PCB manufacturing quality control. The system automatically applies QR code labels, performs AI-based quality inspection, and maintains full product traceability through a web-based verification platform.
 
-Key Features
-Automated Labeling System
+## 🚀 Key Features
 
-Custom-designed labeling mechanism for 1x2 inch sticker labels
-QR code generation and application with unique serial numbers
-Precision label placement with mechanical alignment
+### **Automated Labeling System**
+- Custom-designed labeling mechanism for 1x2 inch sticker labels
+- QR code generation and application with unique serial numbers
+- Precision label placement with mechanical alignment
 
-AI-Powered Quality Control
+### **AI-Powered Quality Control**
+- Real-time PCB defect detection using computer vision
+- OCR text verification for component identification
+- Automated pass/fail classification with machine learning
 
-Real-time PCB defect detection using computer vision
-OCR text verification for component identification
-Automated pass/fail classification with machine learning
+### **Product Traceability**
+- Complete product lifecycle tracking
+- Web-based verification system at `verify.stromlabs.tech/qrid`
+- Real-time database integration with Firebase
+- 24/7 accessible product verification
 
-Product Traceability
+### **Mechanical Automation**
+- Servo-based rejection system for failed units
+- Precision conveyor control with adjustable belt tension
+- IR sensor-based product detection and positioning
 
-Complete product lifecycle tracking
-Web-based verification system at verify.stromlabs.tech/qrid
-Real-time database integration with Firebase
-24/7 accessible product verification
+## 🛠️ System Architecture
 
-Mechanical Automation
+### **Hardware Components**
 
-Servo-based rejection system for failed units
-Precision conveyor control with adjustable belt tension
-IR sensor-based product detection and positioning
+| Component | Specification | Purpose |
+|-----------|---------------|---------|
+| **Frame** | MDF Sunboard + 3D Printed Parts | Custom mechanical structure |
+| **Conveyor Motor** | IG32 Motor + Cytron Driver | Belt drive system |
+| **Conveyor Belt** | Cotton Fabric with 15mm adjustment | Product transport |
+| **Structural Support** | 8mm Steel Rods + Flange Bearings | Frame reinforcement |
+| **Processing Units** | Raspberry Pi 5 + ESP32 | Main control and communication |
+| **Vision System** | RPi2Cam Module (NoIR) | Quality inspection and QR scanning |
+| **Rejection System** | Servo-based actuator | Failed product removal |
+| **Detection** | IR Sensor | Product presence detection |
 
-System Architecture
+### **Software Stack**
 
-###Hardware Components
-ComponentSpecificationPurposeFrameMDF Sunboard + 3D Printed PartsCustom mechanical structureConveyor MotorIG32 Motor + Cytron DriverBelt drive systemConveyor BeltCotton Fabric with 15mm adjustmentProduct transportStructural Support8mm Steel Rods + Flange BearingsFrame reinforcementProcessing UnitsRaspberry Pi 5 + ESP32Main control and communicationVision SystemRPi2Cam Module (NoIR)Quality inspection and QR scanningRejection SystemServo-based actuatorFailed product removalDetectionIR SensorProduct presence detection
-Software Stack
+- **Backend**: Python + OpenCV + Firebase
+- **AI/ML**: TensorFlow/PyTorch for defect detection
+- **OCR**: EasyOCR for text verification
+- **Database**: Firebase Realtime Database
+- **Web Platform**: GitHub Pages hosting
+- **Communication**: ESP32-RPi5 integration
 
-Backend: Python + OpenCV + Firebase
-AI/ML: TensorFlow/PyTorch for defect detection
-OCR: EasyOCR for text verification
-Database: Firebase Realtime Database
-Web Platform: GitHub Pages hosting
-Communication: ESP32-RPi5 integration
+## 📋 System Workflow
 
-System Workflow
-1. PCB Entry → IR Sensor Detection
-2. Conveyor Stop → Label Application
-3. QR Code Scanning → Data Capture
-4. AI Quality Inspection:
-   - OCR Text Verification
-   - Visual Defect Detection
-   - Component Identification
-5. Database Logging → Traceability Record
-6. Pass/Fail Decision
-7. Product Routing:
-   - PASS: Continue on main line
-   - FAIL: Servo rejection to separate line
+PCB Entry → IR Sensor Detection
+Conveyor Stop → Label Application
+QR Code Scanning → Data Capture
+AI Quality Inspection:
 
-Quality Control Parameters
+OCR Text Verification
+Visual Defect Detection
+Component Identification
+
+
+Database Logging → Traceability Record
+Pass/Fail Decision
+Product Routing:
+
+PASS: Continue on main line
+FAIL: Servo rejection to separate line
+
+## 🔍 Quality Control Parameters
+
 The system verifies and logs the following parameters for each PCB:
 
-Device ID: Unique product identifier
-Batch ID: Manufacturing batch tracking
-Manufacturing Date: Production timestamp
-RoHS Compliance: Environmental compliance status
-Serial Number: QR code linked identifier
-Visual Defects: AI-detected anomalies
-Component Verification: OCR-validated part numbers
+- **Device ID**: Unique product identifier
+- **Batch ID**: Manufacturing batch tracking
+- **Manufacturing Date**: Production timestamp
+- **RoHS Compliance**: Environmental compliance status
+- **Serial Number**: QR code linked identifier
+- **Visual Defects**: AI-detected anomalies
+- **Component Verification**: OCR-validated part numbers
 
-Traceability System
-Web Verification Platform
+## 🌐 Traceability System
 
-URL: verify.stromlabs.tech/qrid
-Access: Public verification for customers/clients
-Admin Panel: Complete product history and analytics
-Real-time Updates: Live database synchronization
+### **Web Verification Platform**
+- **URL**: `verify.stromlabs.tech/qrid`
+- **Access**: Public verification for customers/clients
+- **Admin Panel**: Complete product history and analytics
+- **Real-time Updates**: Live database synchronization
 
-QR Code Integration
+### **QR Code Integration**
+- Direct scan-to-verify functionality
+- No manual serial number entry required
+- Instant product information display
+- Complete manufacturing history access
 
-Direct scan-to-verify functionality
-No manual serial number entry required
-Instant product information display
-Complete manufacturing history access
+## 💻 Technical Specifications
 
-Technical Specifications
-Mechanical Design
+### **Mechanical Design**
+- **Frame Material**: MDF Sunboard with 3D printed joints
+- **Conveyor Length**: Adjustable belt system
+- **Belt Tension**: ±15mm front/back adjustment
+- **Rejection Mechanism**: Servo-controlled diverter
 
-Frame Material: MDF Sunboard with 3D printed joints
-Conveyor Length: Adjustable belt system
-Belt Tension: ±15mm front/back adjustment
-Rejection Mechanism: Servo-controlled diverter
+### **Control System**
+- **Primary Controller**: Raspberry Pi 5
+- **Secondary Controller**: ESP32 for sensor integration
+- **Communication**: I2C/SPI protocols
+- **Real-time Processing**: Multi-threaded Python application
 
-Control System
+### **AI/ML Capabilities**
+- **Computer Vision**: OpenCV-based image processing
+- **OCR Engine**: EasyOCR for text recognition
+- **Defect Detection**: Custom-trained CNN model
+- **Classification Accuracy**: >95% for common PCB defects
 
-Primary Controller: Raspberry Pi 5
-Secondary Controller: ESP32 for sensor integration
-Communication: I2C/SPI protocols
-Real-time Processing: Multi-threaded Python application
+## 📊 Performance Metrics
 
-AI/ML Capabilities
+- **Processing Speed**: 30-45 seconds per PCB
+- **Label Accuracy**: 99.5% placement precision
+- **QC Detection Rate**: 95%+ defect identification
+- **System Uptime**: 24/7 operational capability
+- **Database Response**: <2 seconds verification time
 
-Computer Vision: OpenCV-based image processing
-OCR Engine: EasyOCR for text recognition
-Defect Detection: Custom-trained CNN model
-Classification Accuracy: >95% for common PCB defects
+## 🔧 Installation & Setup
 
-Performance Metrics
+```bash
+# Clone repository
+git clone https://github.com/yourusername/Industrial-AI-QC-Labeling-System.git
 
-Processing Speed: 30-45 seconds per PCB
-Label Accuracy: 99.5% placement precision
-QC Detection Rate: 95%+ defect identification
-System Uptime: 24/7 operational capability
-Database Response: <2 seconds verification time
+# Install dependencies
+pip install -r requirements.txt
 
-Applications
+# Configure Firebase credentials
+cp config/firebase_config_template.json config/firebase_config.json
+# Edit with your Firebase credentials
+
+# Run system
+python main.py
+```
+
+## Applications
 
 Electronics Manufacturing: PCB quality control
 Automotive Components: Part traceability
@@ -126,7 +155,7 @@ Medical Device Manufacturing: Compliance verification
 Consumer Electronics: Product authentication
 Industrial Automation: Quality assurance systems
 
-Future Enhancements
+## Future Enhancements
 
 Edge Computing: On-device AI processing
 Cloud Integration: AWS/Azure deployment
@@ -134,7 +163,7 @@ Mobile App: Smartphone verification
 Advanced Analytics: Predictive quality metrics
 Multi-Product Support: Configurable inspection parameters
 
-Team & Contributions
+## Team & Contributions
 This project demonstrates complete end-to-end system development including:
 
 Mechanical design and fabrication
@@ -143,4 +172,4 @@ AI/ML model development and training
 Web development and database management
 Industrial automation implementation
 
-By Pavan Kalsariya & Adarsh Singh
+## By Pavan Kalsariya & Adarsh Singh
