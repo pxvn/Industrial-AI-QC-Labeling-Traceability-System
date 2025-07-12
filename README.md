@@ -6,11 +6,11 @@
 > **Smart PCB Quality Control & Traceability Automation System**  
 > End-to-end automated solution for PCB labeling, quality inspection, and product traceability using AI-powered computer vision and real-time data logging.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements a complete industrial automation system for PCB manufacturing quality control. The system automatically applies QR code labels, performs AI-based quality inspection, and maintains full product traceability through a web-based verification platform.
 
-## 🚀 Key Features
+## Key Features
 
 ### **Automated Labeling System**
 - Custom-designed labeling mechanism for 1x2 inch sticker labels
@@ -57,7 +57,7 @@ This project implements a complete industrial automation system for PCB manufact
 - **Web Platform**: GitHub Pages hosting
 - **Communication**: ESP32-RPi5 integration
 
-## 📋 System Workflow
+## System Workflow
 
 PCB Entry → IR Sensor Detection
 Conveyor Stop → Label Application
@@ -76,7 +76,7 @@ Product Routing:
 PASS: Continue on main line
 FAIL: Servo rejection to separate line
 
-## 🔍 Quality Control Parameters
+## Quality Control Parameters
 
 The system verifies and logs the following parameters for each PCB:
 
@@ -88,7 +88,7 @@ The system verifies and logs the following parameters for each PCB:
 - **Visual Defects**: AI-detected anomalies
 - **Component Verification**: OCR-validated part numbers
 
-## 🌐 Traceability System
+## Traceability System
 
 ### **Web Verification Platform**
 - **URL**: `verify.stromlabs.tech/qrid`
@@ -102,7 +102,7 @@ The system verifies and logs the following parameters for each PCB:
 - Instant product information display
 - Complete manufacturing history access
 
-## 💻 Technical Specifications
+## Technical Specifications
 
 ### **Mechanical Design**
 - **Frame Material**: MDF Sunboard with 3D printed joints
@@ -122,7 +122,7 @@ The system verifies and logs the following parameters for each PCB:
 - **Defect Detection**: Custom-trained CNN model
 - **Classification Accuracy**: >95% for common PCB defects
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 - **Processing Speed**: 30-45 seconds per PCB
 - **Label Accuracy**: 99.5% placement precision
@@ -130,22 +130,6 @@ The system verifies and logs the following parameters for each PCB:
 - **System Uptime**: 24/7 operational capability
 - **Database Response**: <2 seconds verification time
 
-## 🔧 Installation & Setup
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/Industrial-AI-QC-Labeling-System.git
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure Firebase credentials
-cp config/firebase_config_template.json config/firebase_config.json
-# Edit with your Firebase credentials
-
-# Run system
-python main.py
-```
 
 ## Applications
 
