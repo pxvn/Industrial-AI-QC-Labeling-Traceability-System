@@ -123,7 +123,7 @@ Each PCB is inspected for the following:
 ## Performance Metrics
 
 - **Speed**: 30–45 seconds per PCB (label + inspection)
-- **Label Accuracy**: 99.5% placement precision
+- **Label Accuracy**: 90.5% placement precision (Achived Mechnically)
 - **Defect Detection**: 95%+ accuracy
 - **System Uptime**: 24/7 operation tested
 - **Verification Time**: <2 seconds via web
