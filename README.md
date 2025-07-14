@@ -13,6 +13,7 @@ FIG 1 :
 ## Project Overview
 
 This project is a practical industrial automation system built to streamline the PCB (Printed Circuit Board) manufacturing process. It automatically labels each PCB with a QR code, checks its quality using AI, and logs all data for traceability. The result is a faster, smarter, and more reliable quality control system.
+FIG 2 :
 <img width="3840" height="2160" alt="Designed in FUSION 360 v33 (1)" src="https://github.com/user-attachments/assets/11132330-cc03-4b58-8259-f796815898d2" />
 
 
@@ -35,9 +36,14 @@ This project is a practical industrial automation system built to streamline the
 - 24x7 online product verification for customers and admins
 
 ### **Mechanical Automation**
+FIG 3 :
+<img width="3840" height="2160" alt="Designed in FUSION 360 v33 (2)" src="https://github.com/user-attachments/assets/f624f2fa-75bf-45d2-9fc9-ed6d71739f2d" />
+
+
 - Conveyor belt with fine-tuned tension control
 - IR sensors detect PCB presence for timing and control
 - Raspberry Pi is used for controlling the system and also for loading models that help in image detection for QR and product verification using an camera           connected directly to RPI.
+
 
 ## System Architecture
 
