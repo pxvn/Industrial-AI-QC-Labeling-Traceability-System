@@ -1,3 +1,4 @@
+FIG 1 :
 <img width="3840" height="2160" alt="Designed in FUSION 360 v33" src="https://github.com/user-attachments/assets/3cf75ba8-9bd2-4443-8aac-e6e3b2199bef" />
 # AI enabled Industrial QC-LABELING-TRACEABILITY Automation System 
 ### Team Teenage Engineering  
