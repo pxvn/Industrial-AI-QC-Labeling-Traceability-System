@@ -1,5 +1,7 @@
 # AI enabled Industrial QC-LABELING-TRACEABILITY Automation System 
 ### Team Teenage Engineering  
+(MENTOR: PROFS. BHARAT TANK)
+
 (RESPECTED EVALUATOR, MY LAPTOP GOT BRICKED AND WE LOST OUR VIDEO FILES AND PHOTOS IN IT SO WE ARE RECREATING OUR DOCUMENTATION FROM SCRATCH. PLEASE CONSIDER OUR REQUEST – WE WILL UPDATE THIS REPO WITH COMPLETE DOCUMENTATION BY EOD.)
 
 
@@ -68,6 +70,9 @@ FIG 3 :
 | **Vision System**        | RPi2Cam Module (NoIR)                | Captures images for inspection and scanning |
 | **Rejection System**     | Servo motor-based actuator           | Redirects faulty PCBs                       |
 | **Detection**            | IR Sensor                            | Triggers events when PCB is detected        |
+
+
+<img width="3840" height="2160" alt="Designed in FUSION 360 v33" src="https://github.com/user-attachments/assets/03496cf3-285d-4f4a-9071-0b7e289b8f0d" />
 
 ### **Software Stack**
 
