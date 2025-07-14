@@ -1,3 +1,4 @@
+<img width="3840" height="2160" alt="Designed in FUSION 360 v33" src="https://github.com/user-attachments/assets/3cf75ba8-9bd2-4443-8aac-e6e3b2199bef" />
 # AI enabled Industrial QC-LABELING-TRACEABILITY Automation System 
 ### Team Teenage Engineering  
 (DEAR EVALUATOR, MY LAPTOP GOT BRICKED AND WE LOST OUR VIDEO FILES AND PHOTOS IN IT SO WE ARE RECREATING OUR DOCUMENTATION FROM SCRATCH. PLEASE CONSIDER OUR REQUEST – WE WILL UPDATE THIS REPO WITH COMPLETE DOCUMENTATION BY EOD.)
@@ -35,7 +36,6 @@ This project is a practical industrial automation system built to streamline the
 - Raspberry Pi is used for controlling the system and also for loading models that help in image detection for QR and product verification using an camera           connected directly to RPI.
 
 ## System Architecture
-![Product](https://github.com/user-attachments/assets/a2c70785-1114-4a6c-b478-58bba0142dd7)
 
 ### **Hardware Components**
 
