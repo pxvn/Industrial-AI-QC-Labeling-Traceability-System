@@ -6,4 +6,4 @@ The website are perfectly working from our private repositry which is "https://g
 
 The link to our website is : https://verify.stromlabs.tech/
 
-The website that opens on scanning QR is : https://verify.stromlabs.tech/qr/?id=BOX_1001 (you can change the values after id= to see product details for other serial nos. too. Examples for ID :slxab12c,slxbc13d,slxdr14e or anything or others  like BOX_1001 to BOX1010)
+The website that opens on scanning QR is : https://verify.stromlabs.tech/qr/?id=BOX_1001. You can change the values after id= to see product details for other serial nos. too. Examples for ID :slxab12c,slxbc13d,slxdr14e or anything or others  like BOX_1001 to BOX1010 or can also use the below given Qr's for scanning the code and redirect directly to the website.
