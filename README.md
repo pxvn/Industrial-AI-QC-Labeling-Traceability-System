@@ -44,6 +44,38 @@ FIG 2 :
 - Firebase database integration for real-time product records
 - 24x7 online product verification for customers and admins
 
+###  Homepage : 
+- <img width="1920" height="1031" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/cf561873-b736-4c63-b600-31e1dba6cfc6" />
+
+
+###  Product Verification : 
+<img width="1920" height="1033" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/3efe4511-3f16-471d-a2d5-26cbbcec1aad" />
+
+
+###  Enter ProductId as it is : 
+<img width="1920" height="1025" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/bf89006b-040f-4828-a4c4-069cbba35dff" />
+
+
+###  Product details visible :
+<img width="1920" height="1025" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/b0674f00-60eb-4c40-afa2-56311f28c954" />
+
+
+###  Employee Login :
+<img width="1920" height="1031" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/7fa7a57c-423a-4def-9191-def7e83dc98e" />
+
+
+###  Enter Employee Details properly : 
+<img width="1920" height="1026" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/1f257a33-51bd-4f27-a82c-156bfaae1210" />
+
+
+###  Webiste opens that provides various features which allows employee to perform various tasks or operations on data logs :
+<img width="1919" height="1034" alt="Screenshot 2025-07-17 081542" src="https://github.com/user-attachments/assets/4e3b38aa-5439-4fb6-b1ac-63fed819f27e" />
+
+
+### Webpage that opens on scanningthe QR code given on the product label : 
+<img width="1917" height="1029" alt="image" src="https://github.com/user-attachments/assets/8956b16a-6851-4867-9642-3f77a02f0f92" />
+
+#
 ### **Mechanical Automation**
 FIG 3 :
 
