@@ -72,7 +72,7 @@ FIG 2 :
 <img width="1919" height="1034" alt="Screenshot 2025-07-17 081542" src="https://github.com/user-attachments/assets/4e3b38aa-5439-4fb6-b1ac-63fed819f27e" />
 
 
-### Webpage that opens on scanningthe QR code given on the product label : 
+### Webpage that opens on scanning the QR code given on the product label : 
 <img width="1917" height="1029" alt="image" src="https://github.com/user-attachments/assets/8956b16a-6851-4867-9642-3f77a02f0f92" />
 
 #
