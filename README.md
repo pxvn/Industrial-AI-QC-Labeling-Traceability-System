@@ -16,6 +16,10 @@ FIG 1 :
 > **Smart PCB Quality Control & Traceability Automation System**  
 > A fully automated end-to-end solution for PCB labeling, visual inspection, and product traceability using AI, computer vision, and real-time logging.
 
+VIDEO: 1
+https://drive.google.com/file/d/1ATr-kjntGiZoPwIW6M74zLSkXyEIK4Zf/view?usp=drivesdk
+
+
 ## Project Overview
 
 This project is a practical industrial automation system built to streamline the PCB (Printed Circuit Board) manufacturing process. It automatically labels each PCB with a QR code, checks its quality using AI, and logs all data for traceability. The result is a faster, smarter, and more reliable quality control system.
