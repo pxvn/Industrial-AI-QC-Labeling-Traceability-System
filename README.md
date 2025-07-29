@@ -2,7 +2,6 @@
 ### Team Teenage Engineering  
 (MENTOR: PROFS. BHARAT TANK)
 
-(RESPECTED EVALUATOR, MY LAPTOP GOT BRICKED AND WE LOST OUR VIDEO FILES AND PHOTOS IN IT SO WE ARE RECREATING OUR DOCUMENTATION FROM SCRATCH. PLEASE CONSIDER OUR REQUEST – WE WILL UPDATE THIS REPO WITH COMPLETE DOCUMENTATION BY EOD.)
 
 
 FIG 1 :
@@ -23,6 +22,9 @@ https://drive.google.com/file/d/1ATr-kjntGiZoPwIW6M74zLSkXyEIK4Zf/view?usp=drive
 ## Project Overview
 
 This project is a practical industrial automation system built to streamline the PCB (Printed Circuit Board) manufacturing process. It automatically labels each PCB with a QR code, checks its quality using AI, and logs all data for traceability. The result is a faster, smarter, and more reliable quality control system.
+
+[CLICK HERE TO VIEW SCHEMATICS](./Schematic_CONVEYOR_2025-07.pdf)
+
 
 FIG 2 :
 
@@ -81,15 +83,14 @@ FIG 2 :
 
 #
 ### **Mechanical Automation**
+
 FIG 3 :
-
-
 <img width="3840" height="2160" alt="Designed in FUSION 360 v33 (2)" src="https://github.com/user-attachments/assets/f624f2fa-75bf-45d2-9fc9-ed6d71739f2d" />
 
 
 - Conveyor belt with fine-tuned tension control
 - IR sensors detect PCB presence for timing and control
-- Raspberry Pi is used for controlling the system and also for loading models that help in image detection for QR and product verification using an camera           connected directly to RPI.
+- Raspberry Pi is used for controlling the system and also for loading models that help in image detection for QR and product verification using an camera           connected directly   to RPI.
 
 
 ## System Architecture
@@ -106,6 +107,11 @@ FIG 3 :
 | **Vision System**        | RPi2Cam Module (NoIR)                | Captures images for inspection and scanning |
 | **Rejection System**     | Servo motor-based actuator           | Redirects faulty PCBs                       |
 | **Detection**            | IR Sensor                            | Triggers events when PCB is detected        |
+
+
+FLOWCHART:
+<img width="1280" height="700" alt="image" src="https://github.com/user-attachments/assets/2f85aef9-66e9-4d37-bfe8-170f377525f3" />
+<img width="1280" height="700" alt="image" src="https://github.com/user-attachments/assets/01cc694e-32a2-4558-bd78-030d1535de69" />
 
 
 <img width="3840" height="2160" alt="Designed in FUSION 360 v33" src="https://github.com/user-attachments/assets/03496cf3-285d-4f4a-9071-0b7e289b8f0d" />
