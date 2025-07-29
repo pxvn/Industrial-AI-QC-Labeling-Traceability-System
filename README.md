@@ -12,8 +12,7 @@ FIG 1 :
 
 # Industrial AI QC Labeling and Traceability System
 
-> **Smart PCB Quality Control & Traceability Automation System**  
-> A fully automated end-to-end solution for PCB labeling, visual inspection, and product traceability using AI, computer vision, and real-time logging.
+A fully automated end-to-end solution for PCB labeling, visual inspection, and product traceability using AI, computer vision, and real-time logging.
 
 VIDEO: 1
 https://drive.google.com/file/d/1ATr-kjntGiZoPwIW6M74zLSkXyEIK4Zf/view?usp=drivesdk
