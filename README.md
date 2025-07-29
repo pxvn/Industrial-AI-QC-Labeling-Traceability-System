@@ -1,8 +1,8 @@
 # AI enabled Industrial QC-LABELING-TRACEABILITY Automation System 
 
 ### Team Teenage Engineering  
-### TEAM MEMBERS: Pavan K. & Adarsh Singh
-(MENTOR: PROFS. BHARAT TANK)
+TEAM MEMBERS: Pavan K. & Adarsh Singh
+MENTOR: PROFS. BHARAT TANK
 
 
 
